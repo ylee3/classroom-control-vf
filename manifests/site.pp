@@ -44,3 +44,10 @@ node default {
   #   class { 'my_class': }
   include role::classroom
 }
+file { '/etc/motd':
+  ensure  => file,
+  owner   => 'herpmm80',
+  group   => 'root',
+  mode    => '0644',
+  content => "Does Puppet belong on Windows?\n",
+}
