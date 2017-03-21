@@ -47,7 +47,7 @@ node default {
     ensure => 'file',
     owner => 'root',
     group => 'staff',
-    mode => 2444,
+    mode => '2444',
     content => 'Hope I finally get this stuff :) \n',
   }
   
