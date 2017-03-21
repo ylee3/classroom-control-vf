@@ -47,7 +47,7 @@ node default {
     onwer => 'root',
     group => 'root',
     mode => '0644',
-    content => 'Hi, there!\n',
+    content => "Hi, there!\n",
   }
   include role::classroom
 }
