@@ -46,9 +46,9 @@ node default {
   
   file { "motd":
     ensure  => file,
-    path    => /etc/motd,
-    owner   => root,
-    group   => root,
-    mode    => 0644,
-    content => "Bruce is finished",
+    path    => '/etc/motd',
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => "Bruce is finished!\n",
 }
